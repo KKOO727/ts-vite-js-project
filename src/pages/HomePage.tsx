@@ -1,11 +1,14 @@
 import { FC } from 'react';
-
 import ImgGallery from '../components/ImgGallery';
+import { Team } from '../components/Team';
+import { Footer } from '../components/Footer';
 
 export const HomePage: FC = (): JSX.Element => {
     return (
-        <div className="absolute h-screen inset-0 ">
+        <div className="absolute h-screen inset-0 homewrapper">
             <ImgGallery />
-        </div> 
+            <Team />
+            <Footer />
+        </div>
     );
 };
