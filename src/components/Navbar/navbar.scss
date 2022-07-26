@@ -1,0 +1,122 @@
+.navbarContainer {
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: auto;
+    z-index: 10;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    align-items: center;
+
+    .about-nav-container {
+        position: relative;
+        z-index: 15;
+        display: flex;
+        max-width: 1100px;
+        margin-right: auto;
+        margin-left: auto;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+        -webkit-box-pack: start;
+        justify-content: flex-start;
+        -webkit-box-align: center;
+        align-items: center;
+
+        .about-nav-link {
+            width: 650px;
+            height: 48px;
+            position: fixed;
+            display: flex;
+            margin-top: 19px;
+
+            &:hover {
+                width: 800px;
+                height: 600px;
+            }
+
+            &.desktop {
+                padding: 12px 250px;
+                -webkit-box-flex: 0;
+                -ms-flex: 0 auto;
+                flex: 0 auto;
+                border-width: 3px;
+                background-color: rgba(32, 32, 32, 0.25);
+                filter: none;
+                color: #000;
+                font-size: 20px;
+                line-height: 20px;
+                font-weight: 400;
+                letter-spacing: 4px;
+                margin-bottom: 0px;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                flex-direction: column;
+                -webkit-box-pack: start;
+                justify-content: flex-start;
+                -webkit-box-align: center;
+                align-items: center;
+                border: 3px solid #000;
+                border-radius: 50px;
+                text-align: center;
+                text-decoration: none;
+                white-space: nowrap;
+                transition: width 0.4s, height 0.4s;
+                backdrop-filter: blur(16px);
+            }
+        }
+    }
+}
+
+.aboutcontentcontainter.desktop {
+    z-index: 25;
+    display: flex;
+    height: 620px;
+    margin-top: 0px;
+    padding-top: 80px;
+    opacity: 1;
+}
+
+
+
+.contact {
+    width: 20vw;
+    margin-top: 30px;
+    flex-direction: row;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: black;
+    .contact-icon.email {
+        width: 40px;
+        height: 40px;
+        max-height: 50px;
+        margin-top: 0px;
+        background-image: url(https://uploads-ssl.webflow.com/5ee5ebd…/5fbd6e4…_sketched-email-icon.png);
+        background-position: 0px 0px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        filter: none;
+    }
+    .contact-icon.insta {
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        background-image: url(https://uploads-ssl.webflow.com/5ee5ebd…/5fbd6e4…_sketched-insta-icon.png);
+        background-position: 0px 0px;
+        background-size: cover;
+        filter: none;
+    }
+    .contact-icon.shop {
+        width: 45px;
+        height: 45px;
+        background-image: url(https://uploads-ssl.webflow.com/5ee5ebd…/5fbd8ca…_placeholder-shop.png);
+        background-position: 50% 0%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: none;
+    }
+}
